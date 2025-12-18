@@ -33,5 +33,26 @@
         "image": "./images/projects/encrypt_decrypt.png",
         "demoUrl": "",
         "githubUrl": "https://github.com/yusoqt/encrypt_decrypt_file"
+    },
+    {
+        "title": "AdbBot/",
+        "description": "โปรแกรมสำหรับควบคุม android emulator อย่างง่ายโดยใช้ adb ในการควบคุม",
+        "image": "./images/projects/adb.png",
+        "demoUrl": "",
+        "githubUrl": "https://github.com/yusoqt/adbBot"
+    },
+    {
+        "title": "Gold News Track/",
+        "description": "ดึงข้อมูลข่าวอย่างง่ายด้วย RSS Feed เพื่อมาแสดงผลบนเว็บไซต์ (สามารถส่งแจ้งเตือน update ได้!)",
+        "image": "./images/projects/rssfeed.png",
+        "demoUrl": "https://gold-news-track.vercel.app/",
+        "githubUrl": "https://github.com/yusoqt/GoldNewsTrack"
+    },
+    {
+        "title": "TBot (Forex EA)/",
+        "description": "บอทเทรดสำหรับฝั่ง Buy เท่านั้น!!! พร้อม UI อย่างง่ายสำหรับใช้งาน",
+        "image": "./images/projects/bottrade.png",
+        "demoUrl": "https://www.canva.com/design/DAGxRtWqW-A/oKni--3YPSMEx_ECMJ63xQ/view?utm_content=DAGxRtWqW-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb58c9fc90d",
+        "githubUrl": ""
     }
 ]
