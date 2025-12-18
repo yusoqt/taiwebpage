@@ -32,7 +32,15 @@
                         }
 
 
-                        clone.querySelector(".github-link").href = project.githubUrl;
+                        const githubLink = clone.querySelector(".github-link");
+                        if (project.githubUrl) {
+                            githubLink.href = project.githubUrl;
+                            githubLink.classList.remove("pointer-events-none", "opacity-50");
+                        } else {
+                            githubLink.href = "#";
+                            githubLink.classList.add("pointer-events-none", "opacity-50");
+                            githubLink.setAttribute("aria-disabled", "true");
+                        }
                         container.appendChild(clone);
                     });
                 })
@@ -70,6 +78,14 @@
                     </svg>
                     <span>yusoqt</span>
                 </a>
+            </div>
+        </div>
+
+        <div class="flex justify-center mb-12">
+            <div class="border border-gray-600 rounded-md px-3 py-1">
+                <p class="text-[11px] uppercase tracking-[0.1em] text-gray-600">
+                    Last updated: 19 December 2025
+                </p>
             </div>
         </div>
 
