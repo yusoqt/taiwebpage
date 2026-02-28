@@ -5,6 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        #lightbox.active {
+            display: flex;
+        }
+        #lightbox-img-wrap {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+        #lightbox-img-wrap img {
+            max-width: 90vw;
+            max-height: 90vh;
+            border-radius: 8px;
+            display: block;
+        }
+        .img-wrap {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .img-zoom-hint {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: rgba(0,0,0,0.45);
+            color: rgba(255,255,255,0.9);
+            font-size: 11px;
+            font-weight: 500;
+            padding: 2px 7px;
+            border-radius: 4px;
+            pointer-events: none;
+            user-select: none;
+            letter-spacing: 0.03em;
+        }
+        #lightbox-close {
+            position: absolute;
+            top: -36px;
+            right: 0;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            line-height: 1;
+            opacity: 0.8;
+        }
+        #lightbox-close:hover { opacity: 1; }
+        .card-img {
+            cursor: zoom-in;
+        }
+    </style>
     <script defer>
         document.addEventListener("DOMContentLoaded", () => {
             const template = document.getElementById("project-card-template");
@@ -17,9 +75,12 @@
                         const clone = template.content.cloneNode(true);
                         clone.querySelector("h2").textContent = project.title;
                         clone.querySelector("p").textContent = project.description;
-                        clone.querySelector("img").src = project.image;
-                        clone.querySelector("img").alt = project.title;
-
+                        const img = clone.querySelector("img");
+                        img.src = project.image;
+                        img.alt = project.title;
+                        img.classList.add("card-img");
+                        img.dataset.src = project.image;
+                        img.dataset.title = project.title;
 
                         const demoLink = clone.querySelector(".demo-link");
                         if (project.demoUrl) {
@@ -30,7 +91,6 @@
                             demoLink.classList.add("pointer-events-none", "opacity-50");
                             demoLink.setAttribute("aria-disabled", "true");
                         }
-
 
                         const githubLink = clone.querySelector(".github-link");
                         if (project.githubUrl) {
@@ -43,10 +103,28 @@
                         }
                         container.appendChild(clone);
                     });
+
+                    // Lightbox logic
+                    document.getElementById("projects").addEventListener("click", e => {
+                        const img = e.target.closest(".card-img");
+                        if (!img) return;
+                        document.getElementById("lightbox-full").src = img.dataset.src;
+                        document.getElementById("lightbox").classList.add("active");
+                    });
                 })
                 .catch(error => {
                     console.error("เกิดข้อผิดพลาดในการโหลด JSON:", error);
                 });
+
+            // Close lightbox
+            const lb = document.getElementById("lightbox");
+            document.getElementById("lightbox-close").addEventListener("click", () => lb.classList.remove("active"));
+            lb.addEventListener("click", e => {
+                if (e.target === lb) lb.classList.remove("active");
+            });
+            document.addEventListener("keydown", e => {
+                if (e.key === "Escape") lb.classList.remove("active");
+            });
         });
     </script>
 
@@ -98,7 +176,10 @@
     <template id="project-card-template">
         <div class="block bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 flex flex-col h-full mb-4">
             <div class = flex-grow>
-                <img src="" alt="" class="w-[450px] h-[200px] object-cover rounded-md mb-4" />
+                <div class="img-wrap mb-4">
+                    <img src="" alt="" class="w-full h-[200px] object-cover rounded-md" />
+                    <span class="img-zoom-hint">🔍 กดเพื่อซูม</span>
+                </div>
                 <h2 class="text-xl font-semibold"></h2>
                 <p class="text-gray-500 text-base mt-1"></p>
             </div>
@@ -113,6 +194,14 @@
             </div>
         </div>
     </template>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <div id="lightbox-img-wrap">
+            <span id="lightbox-close">&times;</span>
+            <img id="lightbox-full" src="" alt="" />
+        </div>
+    </div>
 
     <svg style="display: none;">
         <symbol id="icon-github" viewBox="0 0 24 24">
