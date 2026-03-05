@@ -1,87 +1,105 @@
-[
-    {
-        "title": "DeeptalkWebsite/",
-        "description": "เว็บไซต์รวมคำถามสำหรับกิจกรรม deeptalk กับ เพื่อน, ครอบครัว, คนรัก และ ตัวเอง โดยคำถามถูกจัดเป็นหมวดหมู่ ใช้งานง่ายผ่านระบบสุ่มคำถาม ช่วยเปิดใจ สร้างความเข้าใจให้แก่กันมากขึ้น💕",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269658/deeptalkwebsite_g4aw4k.png",
-        "demoUrl": "https://yusoqt.github.io/DeeptalkWebsite/",
-        "githubUrl": "https://github.com/yusoqt/DeeptalkWebsite"
-    },
-    {
-        "title": "MysticLibs/",
-        "description": "ค้นหา mbti ของคุณด้วยคำถาม 12 ข้อ มาในธีมของ \"หนังสือลึกลับ\" สร้างเว็บนี้เพราะเคยลองทำหลายแบบ แล้วรู้สึกอยากลองสร้างของตัวเองบ้าง😗",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269667/mbti_ov5fhx.png",
-        "demoUrl": "https://yusoqt.github.io/MysticLibs/",
-        "githubUrl": "https://github.com/yusoqt/MysticLibs"
-    },
-    {
-        "title": "23Chat/",
-        "description": "เป็น Project ที่เคยทำตอน ม. 3 แล้วคิดถึงเลยเอากลับมาตกแต่งใหม่ เพื่อให้ใช้งานง่ายมากขึ้น เป็นเว็บแชท ที่สามารถคุยกับคนแปลกหน้าแบบส่วนตัว (ระบบสุ่ม) หรือห้องรวมก็ได้🗨️",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269658/23chat_uo1odk.png",
-        "demoUrl": "https://two3webchat.onrender.com/",
-        "githubUrl": "https://github.com/yusoqt/23WebChat"
-    },
-    {
-        "title": "TaroProject/",
-        "description": "ดูดวงโดยใช้การกระจายไพ่ทาโร่แบบ 10 ใบ ซึ่งมักเรียกกันว่า \"Celtic Cross Spread\" ช่วยให้ผู้ใช้สามารถรับคำทำนายเกี่ยวกับสถานการณ์ในชีวิตได้อย่างละเอียดและครอบคลุม🍀 (@Krit: ออกแบบ/วางระบบ)",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269661/taro_oavmlo.png",
-        "demoUrl": "https://yusoqt.github.io/TaroProject/",
-        "githubUrl": "https://github.com/yusoqt/TaroProject"
-    },
-    {
-        "title": "Encrypt-Decrypt File/",
-        "description": "โปรแกรมเข้ารหัสและถอดรหัสไฟล์อย่างง่าย ที่เขียนด้วย Python โดยเข้ารหัสและถอดรหัสไฟล์ด้วยคีย์ส่วนตัว (Key-based AES encryption)🔐",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269659/encrypt_decrypt_k5ny9n.png",
-        "demoUrl": "",
-        "githubUrl": "https://github.com/yusoqt/encrypt_decrypt_file"
-    },
-    {
-        "title": "AdbBot/",
-        "description": "โปรแกรมสำหรับควบคุม android emulator อย่างง่ายโดยใช้ adb ในการควบคุม",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269666/adb_h2upxd.png",
-        "demoUrl": "",
-        "githubUrl": "https://github.com/yusoqt/adbBot"
-    },
-    {
-        "title": "Gold News Track/",
-        "description": "ดึงข้อมูลข่าวอย่างง่ายด้วย RSS Feed เพื่อมาแสดงผลบนเว็บไซต์ (สามารถส่งแจ้งเตือน update ได้!)",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269660/rssfeed_zswobs.png",
-        "demoUrl": "https://gold-news-track.vercel.app/",
-        "githubUrl": "https://github.com/yusoqt/GoldNewsTrack"
-    },
-    {
-        "title": "TBot (Forex EA)/",
-        "description": "บอทเทรดแบบ Dynamic Grid สำหรับฝั่ง Buy เท่านั้น!!! พร้อม UI อย่างง่ายสำหรับใช้งาน",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269658/bottrade_di89hm.png",
-        "demoUrl": "https://www.canva.com/design/DAGxRtWqW-A/oKni--3YPSMEx_ECMJ63xQ/view?utm_content=DAGxRtWqW-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb58c9fc90d",
-        "githubUrl": ""
-    },
-    {
-        "title": "First Notion template/",
-        "description": "Basic Notion template for every day use :)",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269660/notion_whizch.png",
-        "demoUrl": "https://eminent-beluga-cbf.notion.site/First-Project-101-0-COPY-VERSION-2fb34c10bd4d802399c1eff00effa9f9?source=copy_link",
-        "githubUrl": ""
-    },
-    {
-        "title": "Translator Sidebar Extension/",
-        "description": "Extension สำหรับ Brave / Chrome ที่ช่วยแปลภาษาผ่าน Sidebar ได้อย่างรวดเร็ว",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269660/translateSidebar_cedq8i.png",
-        "demoUrl": "",
-        "githubUrl": "https://github.com/yusoqt/braveExtensionTranslate"
-    },
-    {
-        "title": "Work Support System/",
-        "description": "ตอนไปฝึกงานแล้วเห็นการทำงานจริง จึงอยากลองสร้างเว็บไซต์อย่างง่ายที่รวมทุกอย่างไว้ในที่เดียวขึ้นมา :)",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269664/worksupport_byvzvf.png",
-        "demoUrl": "https://script.google.com/macros/s/AKfycbwgdREISKbI3h-wBJm9WFrB-YABzOe-aW88hjeTn2-pusldvzNeiYfRawqBmp91du6g/exec",
-        "githubUrl": ""
-    },
-    {
-        "title": "EasyQR/",
-        "description": "Easy QR Website to gen/read QR code :)",
-        "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269661/qrgen_x8myar.png",
-        "demoUrl": "https://yusoqt.github.io/EasyQR/",
-        "githubUrl": "https://github.com/yusoqt/EasyQR"
-    }
-]
-
+{
+    "project_personal": [
+        {
+            "title": "DeeptalkWebsite/",
+            "description": "เว็บไซต์รวมคำถามสำหรับกิจกรรม deeptalk กับ เพื่อน, ครอบครัว, คนรัก และ ตัวเอง โดยคำถามถูกจัดเป็นหมวดหมู่ ใช้งานง่ายผ่านระบบสุ่มคำถาม ช่วยเปิดใจ สร้างความเข้าใจให้แก่กันมากขึ้น💕",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269658/deeptalkwebsite_g4aw4k.png",
+            "demoUrl": "https://yusoqt.github.io/DeeptalkWebsite/",
+            "githubUrl": "https://github.com/yusoqt/DeeptalkWebsite"
+        },
+        {
+            "title": "MysticLibs/",
+            "description": "ค้นหา mbti ของคุณด้วยคำถาม 12 ข้อ มาในธีมของ \"หนังสือลึกลับ\" สร้างเว็บนี้เพราะเคยลองทำหลายแบบ แล้วรู้สึกอยากลองสร้างของตัวเองบ้าง😗",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269667/mbti_ov5fhx.png",
+            "demoUrl": "https://yusoqt.github.io/MysticLibs/",
+            "githubUrl": "https://github.com/yusoqt/MysticLibs"
+        },
+        {
+            "title": "23Chat/",
+            "description": "เป็น Project ที่เคยทำตอน ม. 3 แล้วคิดถึงเลยเอากลับมาตกแต่งใหม่ เพื่อให้ใช้งานง่ายมากขึ้น เป็นเว็บแชท ที่สามารถคุยกับคนแปลกหน้าแบบส่วนตัว (ระบบสุ่ม) หรือห้องรวมก็ได้🗨️",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269658/23chat_uo1odk.png",
+            "demoUrl": "https://two3webchat.onrender.com/",
+            "githubUrl": "https://github.com/yusoqt/23WebChat"
+        },
+        {
+            "title": "TaroProject/",
+            "description": "ดูดวงโดยใช้การกระจายไพ่ทาโร่แบบ 10 ใบ ซึ่งมักเรียกกันว่า \"Celtic Cross Spread\" ช่วยให้ผู้ใช้สามารถรับคำทำนายเกี่ยวกับสถานการณ์ในชีวิตได้อย่างละเอียดและครอบคลุม🍀 (@Krit: ออกแบบ/วางระบบ)",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269661/taro_oavmlo.png",
+            "demoUrl": "https://yusoqt.github.io/TaroProject/",
+            "githubUrl": "https://github.com/yusoqt/TaroProject"
+        },
+        {
+            "title": "Encrypt-Decrypt File/",
+            "description": "โปรแกรมเข้ารหัสและถอดรหัสไฟล์อย่างง่าย ที่เขียนด้วย Python โดยเข้ารหัสและถอดรหัสไฟล์ด้วยคีย์ส่วนตัว (Key-based AES encryption)🔐",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269659/encrypt_decrypt_k5ny9n.png",
+            "demoUrl": "",
+            "githubUrl": "https://github.com/yusoqt/encrypt_decrypt_file"
+        },
+        {
+            "title": "AdbBot/",
+            "description": "โปรแกรมสำหรับควบคุม android emulator อย่างง่ายโดยใช้ adb ในการควบคุม",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269666/adb_h2upxd.png",
+            "demoUrl": "",
+            "githubUrl": "https://github.com/yusoqt/adbBot"
+        },
+        {
+            "title": "Gold News Track/",
+            "description": "ดึงข้อมูลข่าวอย่างง่ายด้วย RSS Feed เพื่อมาแสดงผลบนเว็บไซต์ (สามารถส่งแจ้งเตือน update ได้!)",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269660/rssfeed_zswobs.png",
+            "demoUrl": "https://gold-news-track.vercel.app/",
+            "githubUrl": "https://github.com/yusoqt/GoldNewsTrack"
+        },
+        {
+            "title": "TBot (Forex EA)/",
+            "description": "บอทเทรดแบบ Dynamic Grid สำหรับฝั่ง Buy เท่านั้น!!! พร้อม UI อย่างง่ายสำหรับใช้งาน",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269658/bottrade_di89hm.png",
+            "demoUrl": "https://www.canva.com/design/DAGxRtWqW-A/oKni--3YPSMEx_ECMJ63xQ/view?utm_content=DAGxRtWqW-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb58c9fc90d",
+            "githubUrl": ""
+        },
+        {
+            "title": "First Notion template/",
+            "description": "Basic Notion template for every day use :)",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269660/notion_whizch.png",
+            "demoUrl": "https://eminent-beluga-cbf.notion.site/First-Project-101-0-COPY-VERSION-2fb34c10bd4d802399c1eff00effa9f9?source=copy_link",
+            "githubUrl": ""
+        },
+        {
+            "title": "Translator Sidebar Extension/",
+            "description": "Extension สำหรับ Brave / Chrome ที่ช่วยแปลภาษาผ่าน Sidebar ได้อย่างรวดเร็ว",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269660/translateSidebar_cedq8i.png",
+            "demoUrl": "",
+            "githubUrl": "https://github.com/yusoqt/braveExtensionTranslate"
+        },
+        {
+            "title": "Work Support System/",
+            "description": "ตอนไปฝึกงานแล้วเห็นการทำงานจริง จึงอยากลองสร้างเว็บไซต์อย่างง่ายที่รวมทุกอย่างไว้ในที่เดียวขึ้นมา :)",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269664/worksupport_byvzvf.png",
+            "demoUrl": "https://script.google.com/macros/s/AKfycbwgdREISKbI3h-wBJm9WFrB-YABzOe-aW88hjeTn2-pusldvzNeiYfRawqBmp91du6g/exec",
+            "githubUrl": ""
+        },
+        {
+            "title": "EasyQR/",
+            "description": "Easy QR Website to gen/read QR code :) เคยใช้ของ online แล้วมันหมดอายุเลยลองทำใช้เองไปเลย",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269661/qrgen_x8myar.png",
+            "demoUrl": "https://yusoqt.github.io/EasyQR/",
+            "githubUrl": "https://github.com/yusoqt/EasyQR"
+        }
+    ],
+    "project_academic": [
+        {
+            "title": "Song of Twelve Feathers",
+            "description": "(รายวิชา Programming Methodology I) มีโอกาสพัฒนาเกมโดยใช้ภาษา Java โดยหลัก ๆ ใน project นี้ก็ได้ลองเขียนโปรแกรมแบบ Object-Oriented Programming (OOP) ในการออกแบบโครงสร้างของตัวละครในเกม เช่น monster, boss เพื่อให้สามารถนำไปใช้ซ้ำได้ รวมไปถึงออกแบบระบบเกมกับทีมว่าควรจะเล่นประมาณไหน user journey ควรจะเป็นยังไง",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772737083/gameJava_wlteab.png"
+        },
+        {
+            "title": "Restaurant Reservation Website",
+            "description": "(รายวิชา Software Development Practice II) เรียนรู้การทำเว็บทั้งแบบ frontend, backend โดยหลัก ๆ ใน project นี้จะได้ใช้โครงเว็บไซต์จากที่อาจารย์สอนมาทำต่อ และลอง deploy ใช้งานจริง",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772735915/restaurant_web_renzu7.png"
+        },
+        {
+            "title": "Smart Cat Home",
+            "description": "(รายวิชา Embedded System) ได้มีโอกาสทดลองใช้งานไมโครคอนโทรลเลอร์ เช่น ESP32 และ ESP32-CAM โดยในโปรเจกต์นี้ได้ทดลองนำ AI สำหรับตรวจจับแมวมาเชื่อมต่อกับอุปกรณ์ ซึ่งเลือกใช้โมเดลที่มีให้ใช้งานบน Hugging Face เพื่อให้สามารถพัฒนาโปรเจกต์ขนาดเล็กได้ง่ายขึ้น นอกจากนี้ยังได้มีระบบแจ้งเตือนข้อมูลผ่าน Telegram Chatbot",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772736270/smart_cat_home_aahixj.png"
+        }
+    ]
+}

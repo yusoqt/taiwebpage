@@ -65,23 +65,32 @@
     </style>
     <script defer>
         document.addEventListener("DOMContentLoaded", () => {
-            const template = document.getElementById("project-card-template");
+            const templatePersonal = document.getElementById("project-card-template");
+            const templateAcademic = document.getElementById("project-card-academic-template");
             const container = document.getElementById("projects");
+            let allProjects = null;
+            let currentTab = "personal";
 
-            fetch("projects.json")
-                .then(response => response.json())
-                .then(projects => {
-                    projects.forEach(project => {
-                        const clone = template.content.cloneNode(true);
-                        clone.querySelector("h2").textContent = project.title;
-                        clone.querySelector("p").textContent = project.description;
-                        const img = clone.querySelector("img");
-                        img.src = project.image;
-                        img.alt = project.title;
-                        img.classList.add("card-img");
-                        img.dataset.src = project.image;
-                        img.dataset.title = project.title;
+            function renderProjects(tab) {
+                container.innerHTML = "";
+                const projects = tab === "personal"
+                    ? allProjects.project_personal
+                    : allProjects.project_academic;
 
+                const template = tab === "personal" ? templatePersonal : templateAcademic;
+
+                projects.forEach(project => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector("h2").textContent = project.title;
+                    clone.querySelector("p").textContent = project.description;
+                    const img = clone.querySelector("img");
+                    img.src = project.image;
+                    img.alt = project.title;
+                    img.classList.add("card-img");
+                    img.dataset.src = project.image;
+                    img.dataset.title = project.title;
+
+                    if (tab === "personal") {
                         const demoLink = clone.querySelector(".demo-link");
                         if (project.demoUrl) {
                             demoLink.href = project.demoUrl;
@@ -101,11 +110,35 @@
                             githubLink.classList.add("pointer-events-none", "opacity-50");
                             githubLink.setAttribute("aria-disabled", "true");
                         }
-                        container.appendChild(clone);
-                    });
+                    }
+
+                    container.appendChild(clone);
+                });
+
+                // Update tab button styles
+                const tabPersonal = document.getElementById("tab-personal");
+                const tabAcademic = document.getElementById("tab-academic");
+                if (tab === "personal") {
+                    tabPersonal.classList.add("text-gray-800", "after:scale-x-100");
+                    tabPersonal.classList.remove("text-gray-400", "after:scale-x-0");
+                    tabAcademic.classList.add("text-gray-400", "after:scale-x-0");
+                    tabAcademic.classList.remove("text-gray-800", "after:scale-x-100");
+                } else {
+                    tabAcademic.classList.add("text-gray-800", "after:scale-x-100");
+                    tabAcademic.classList.remove("text-gray-400", "after:scale-x-0");
+                    tabPersonal.classList.add("text-gray-400", "after:scale-x-0");
+                    tabPersonal.classList.remove("text-gray-800", "after:scale-x-100");
+                }
+            }
+
+            fetch("projects.json")
+                .then(response => response.json())
+                .then(data => {
+                    allProjects = data;
+                    renderProjects(currentTab);
 
                     // Lightbox logic
-                    document.getElementById("projects").addEventListener("click", e => {
+                    container.addEventListener("click", e => {
                         const img = e.target.closest(".card-img");
                         if (!img) return;
                         document.getElementById("lightbox-full").src = img.dataset.src;
@@ -115,6 +148,15 @@
                 .catch(error => {
                     console.error("เกิดข้อผิดพลาดในการโหลด JSON:", error);
                 });
+
+            document.getElementById("tab-personal").addEventListener("click", () => {
+                currentTab = "personal";
+                renderProjects(currentTab);
+            });
+            document.getElementById("tab-academic").addEventListener("click", () => {
+                currentTab = "academic";
+                renderProjects(currentTab);
+            });
 
             // Close lightbox
             const lb = document.getElementById("lightbox");
@@ -162,12 +204,20 @@
         <div class="flex justify-center mb-12">
             <div class="border border-gray-600 rounded-md px-3 py-1">
                 <p class="text-[11px] uppercase tracking-[0.1em] text-gray-600">
-                    Last updated: 19 December 2025
+                    Last updated: 5 March 2026
                 </p>
             </div>
         </div>
 
         <div class="w-full max-w-6xl">
+            <div class="flex justify-center gap-8 mb-8">
+                <button id="tab-personal" class="relative pb-2 text-sm font-semibold text-gray-800 transition after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-100 after:transition-transform hover:text-blue-600">
+                    Personal
+                </button>
+                <button id="tab-academic" class="relative pb-2 text-sm font-semibold text-gray-400 transition after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform hover:text-blue-600">
+                    Academic
+                </button>
+            </div>
             <div id="projects" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
         </div>
     </div>
@@ -191,6 +241,19 @@
                     </svg>
                     GitHub
                 </a>
+            </div>
+        </div>
+    </template>
+
+    <template id="project-card-academic-template">
+        <div class="block bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 flex flex-col h-full mb-4">
+            <div class="flex-grow">
+                <div class="img-wrap mb-4">
+                    <img src="" alt="" class="w-full h-[200px] object-cover rounded-md" />
+                    <span class="img-zoom-hint">🔍 กดเพื่อซูม</span>
+                </div>
+                <h2 class="text-xl font-semibold"></h2>
+                <p class="text-gray-500 text-base mt-1"></p>
             </div>
         </div>
     </template>
