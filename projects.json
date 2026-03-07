@@ -79,10 +79,17 @@
         },
         {
             "title": "EasyQR/",
-            "description": "Easy QR Website to gen/read QR code :) เคยใช้ของ online แล้วมันหมดอายุเลยลองทำใช้เองไปเลย",
+            "description": "Easy QR Website to gen/read QR code เคยใช้ของ online แล้วมันหมดอายุเลยลองทำใช้เองไปเลย",
             "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772269661/qrgen_x8myar.png",
             "demoUrl": "https://yusoqt.github.io/EasyQR/",
             "githubUrl": "https://github.com/yusoqt/EasyQR"
+        },
+        {
+            "title": "SmartEyes/",
+            "description": "เว็บเครื่องมือสำหรับวิเคราะห์ภาพด้วยโมเดล YOLO สามารถอัปโหลดโมเดล .pt และรูปภาพเพื่อทำ detection, segmentation และ classification ได้ (รองรับเฉพาะไฟล์โมเดล .pt (Ultralytics format))",
+            "image": "https://res.cloudinary.com/dz15tgpwy/image/upload/v1772906088/smarteye_x877hn.png",
+            "demoUrl": "",
+            "githubUrl": ""
         }
     ],
     "project_academic": [

@@ -13,9 +13,3 @@
 
 ## Academic Projects
 โปรเจกต์จากรายวิชาในมหาวิทยาลัย เช่น เกม Java (OOP), เว็บจองร้านอาหาร (Full-stack), และระบบ Smart Home ด้วย ESP32 + AI
-
-## Tech Stack
-- HTML / Tailwind CSS / Vanilla JavaScript
-- `projects.json` สำหรับจัดการข้อมูลโปรเจกต์
-- Hosted on GitHub Pages
-
